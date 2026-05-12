@@ -1,14 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --text-font: 'Inter-variable';
-    --accent-font:' PressStart2P';
-    --text-font-weight: 410;
-    --header-font-weight: 715;
-    --accent-font-weight: 400;
-    --bg-image: 
-    repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(to top, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+  --text-font: "Inter-variable";
+  --accent-font: "PressStart2P";
+  --text-font-weight: 410;
+  --header-font-weight: 715;
+  --accent-font-weight: 400;
+  --bg-image:
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to top,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
     repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
-    
-    
+  --block-width: clamp(375px, 260.56px + 30.52vw, 700px);
+  --header-title-font-size: clamp(3.0625rem, 2.71rem + 1.5vw, 4.0625rem);
+  --header-subtitle-font-size: clamp(0.875rem, 0.68rem + 0.85vw, 1.4375rem);
+  --header-padding-inline: clamp(1rem, -1.34rem + 10vw, 7.65625rem);
+  --header-padding-block: clamp(7.625rem, 7.45rem + 0.75vw, 8.125rem);
+  --gap-s: 20px;
 }
