@@ -92,8 +92,30 @@
           </article>
         </li>
       </ul>
-      <!-- <button class="card__icon-button"><svg width="" height=""><use href="svg/floppy.svg#floppy" > -->
-      <!-- </use></svg><span class="button__text">Сохранить на память</span></button> -->
+      <button
+        class="content__button button__text"
+        type="button"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id"
+      >
+        <svg width="21px" height="21px">
+          <use href="svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog id="dialog-id">
+        <section class="dialog__section">
+          <section class="dialog__content">
+            <svg width="39px" height="39px">
+              <use href="svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="dialog__paragraph">Вставьте дискету, чтобы продолжить</p>
+          </section>
+          <form method="dialog">
+            <button class="dialog__button button__text">ok</button>
+          </form>
+        </section>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

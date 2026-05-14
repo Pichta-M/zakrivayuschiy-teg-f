@@ -28,11 +28,16 @@
   --header-subtitle-font-size: clamp(0.875rem, 0.68rem + 0.85vw, 1.4375rem);
   --header-padding-inline: clamp(1rem, -1.34rem + 10vw, 7.65625rem);
   --header-padding-block: clamp(7.625rem, 7.45rem + 0.75vw, 8.125rem);
+  --gap-xxs: 8px;
   --gap-xs: 12px;
   --gap-s: 20px;
   --gap-m: 25px;
+  --gap-l: 30px;
+  --gap-xl: 50px;
   --body-gap: clamp(98px, 97.3px + 0.19vw, 100px);
-  --card-bg-color: #fff;
+  --bg-color: #fff;
+  --button-bg-color: #fff;
+  --backdrop-color: rgba(0, 0, 0, 1);
   --text-font-size: 18px;
   --title-font-size: 18px;
   --button-font-size: 14px;
@@ -44,5 +49,6 @@
   --margin-s: 10px;
   --padding-s: 25px;
   --padding-l: 100px;
-  --line-height-s: 21px;
+  --line-height-s: 116%;
+  --line-height-m: 150%;
 }

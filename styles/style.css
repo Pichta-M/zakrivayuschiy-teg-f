@@ -90,8 +90,14 @@
   border: 2px solid var(--border-body-color, rgba(0, 0, 0, 1));
 }
 
+.content {
+  display: grid;
+  justify-items: center;
+  gap: var(--gap-xl, 50px);
+  background-color: var(--bg-color, #fff);
+}
+
 .card {
-  background-color: var(--card-bg-color, #fff);
 }
 
 .card__title {
@@ -147,7 +153,7 @@
 }
 
 .card__paragraph {
-  line-height: var(--line-height-s, 21px);
+  line-height: var(--line-height-s, 116%);
   font-size: var(--text-font-size, 18px);
 }
 
@@ -169,12 +175,68 @@
 .card__like-button {
   width: 130px;
   height: 38px;
-  background-color: transparent;
-  border: 2px solid var(--border-button-color, rgba(0, 0, 0, 1));
 }
 
 .button__text {
   font-family: var(--accent-font, "PressStart2P"), monospace;
   font-weight: var(--accent-font-weight, 400);
   font-size: var(--button-font-size, 14px);
+}
+
+.content__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  height: 55px;
+  gap: var(--gap-xxs, 8px);
+}
+
+dialog {
+  background-color: var(--bg-color, #fff);
+  display: none;
+  border: 2px solid var(--border-body-color, rgba(0, 0, 0, 1));
+  padding: 30px;
+  min-width: 353px;
+  overflow: hidden;
+}
+
+dialog[open] {
+  display: grid;
+}
+
+dialog::backdrop {
+  background-color: var(--backdrop-color, rgba(0, 0, 0, 1));
+  opacity: 0.75;
+}
+
+.dialog__section {
+  display: grid;
+  width: 293px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  gap: var(--gap-l, 30px);
+}
+
+.dialog__content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: var(--gap-s, 20px);
+  text-transform: uppercase;
+  grid-template-columns: min-content 1fr;
+}
+
+.dialog__paragraph {
+  font-family: var(--accent-font, "PressStart2P"), monospace;
+  font-weight: var(--accent-font-weight, 400);
+  font-size: var(--button-font-size, 14px);
+  line-height: var(--line-height-m, 150%);
+}
+
+.dialog__button {
+  text-transform: uppercase;
+  width: 293px;
+  height: 38px;
 }
