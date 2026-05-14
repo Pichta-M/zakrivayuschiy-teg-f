@@ -94,10 +94,11 @@
   display: grid;
   justify-items: center;
   gap: var(--gap-xl, 50px);
-  background-color: var(--bg-color, #fff);
+  background-color: transparent;
 }
 
 .card {
+    background-color: var(--bg-color, #fff);
 }
 
 .card__title {
@@ -192,17 +193,24 @@
   gap: var(--gap-xxs, 8px);
 }
 
+.content__button .floppy-icon {
+  width:21px;
+  height:21px;
+}
+
 dialog {
   background-color: var(--bg-color, #fff);
   display: none;
   border: 2px solid var(--border-body-color, rgba(0, 0, 0, 1));
   padding: 30px;
-  min-width: 353px;
+  width: 353px;
   overflow: hidden;
 }
 
 dialog[open] {
   display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 dialog::backdrop {
@@ -212,10 +220,9 @@ dialog::backdrop {
 
 .dialog__section {
   display: grid;
-  width: 293px;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 293px;
   gap: var(--gap-l, 30px);
 }
 
@@ -237,6 +244,40 @@ dialog::backdrop {
 
 .dialog__button {
   text-transform: uppercase;
-  width: 293px;
+  width: 100%;
   height: 38px;
+}
+
+@media (max-width: 375px) {
+  
+  .page {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .content__button {
+    display: grid;
+    grid-template-rows: min-content;
+    align-items: baseline;
+    justify-items: center;
+    padding-top:17px;
+    width: 306px;
+    height: 84px;
+  }
+
+  .content__button .floppy-icon {
+  width:28px;
+  height:28px;
+  }
+
+  dialog {
+    width: 341px;
+  }
+
+  .dialog__section {
+    grid-template-columns: 261px;
+  }
 }
