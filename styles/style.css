@@ -132,7 +132,7 @@
 }
 
 .third__filter {
-  filter: drop-shadow(4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5)));
+  filter: contrast(110%) brightness(90%) drop-shadow(4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5)));
 }
 
 .fourth__filter {
@@ -201,6 +201,7 @@
 .card__buttons {
   display: flex;
   justify-self: end;
+  height: 38px;
   gap: var(--gap-xs, 12px);
 }
 
@@ -220,6 +221,10 @@
 }
 
 .like-icon {
+}
+
+.like-icon .sparks {
+  opacity: 0;
 }
 
 .card__like-button {
