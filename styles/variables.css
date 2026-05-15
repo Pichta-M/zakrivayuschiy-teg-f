@@ -24,6 +24,7 @@
     repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
   --block-width: clamp(375px, 260.56px + 30.52vw, 700px);
   --accent-color: rgba(0, 0, 0, 1);
+  --filter--accent-color: rgba(0, 0, 0, 0.5);
   --header-title-font-size: clamp(3.0625rem, 2.71rem + 1.5vw, 4.0625rem);
   --header-subtitle-font-size: clamp(0.875rem, 0.68rem + 0.85vw, 1.4375rem);
   --header-padding-inline: clamp(1rem, -1.34rem + 10vw, 7.65625rem);
