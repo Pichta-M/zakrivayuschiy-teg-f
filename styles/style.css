@@ -126,13 +126,13 @@
 .first__filter {
   filter: drop-shadow(
     4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5))
-  );
+  ) hue-rotate(10deg);
 }
 
 .second__filter {
   filter: drop-shadow(
     4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5))
-  );
+  ) invert(10%);
 }
 
 .third__filter {
@@ -141,17 +141,17 @@
 }
 
 .fourth__filter {
-  filter: brightness(1.5)
+  filter: brightness(1.5) 
     drop-shadow(4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5)));
 }
 
 .fifth__filter {
-  filter: contrast(110%) brightness(0.9)
+  filter: contrast(110%) brightness(0.9) saturate(120%)
     drop-shadow(4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5)));
 }
 
 .sixth__filter {
-  filter: contrast(120%) brightness(80%)
+  filter: contrast(120%) brightness(80%) opacity(90%)
     drop-shadow(4px 4px 10px var(--filter--accent-color, rgba(0, 0, 0, 0.5)));
 }
 
