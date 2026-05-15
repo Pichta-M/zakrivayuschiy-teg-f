@@ -54,7 +54,7 @@ ol {
 
 button {
   background-color: var(--button-bg-color, #fff);
-  border: 2px solid var(--border-button-color, rgba(0, 0, 0, 1));
+  border: 2px solid var(--accent-color, rgba(0, 0, 0, 1));
 }
 
 

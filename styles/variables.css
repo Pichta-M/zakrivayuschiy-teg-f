@@ -5,6 +5,7 @@
   --text-font-weight: 410;
   --title-font-weight: 715;
   --accent-font-weight: 400;
+  --difference-color: #fff;
   --bg-image:
     repeating-linear-gradient(
       90deg,
@@ -22,8 +23,7 @@
     ),
     repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
   --block-width: clamp(375px, 260.56px + 30.52vw, 700px);
-  --border-body-color: rgba(0, 0, 0, 1);
-  --border-button-color: rgba(0, 0, 0, 1);
+  --accent-color: rgba(0, 0, 0, 1);
   --header-title-font-size: clamp(3.0625rem, 2.71rem + 1.5vw, 4.0625rem);
   --header-subtitle-font-size: clamp(0.875rem, 0.68rem + 0.85vw, 1.4375rem);
   --header-padding-inline: clamp(1rem, -1.34rem + 10vw, 7.65625rem);
@@ -37,14 +37,11 @@
   --body-gap: clamp(98px, 97.3px + 0.19vw, 100px);
   --bg-color: #fff;
   --button-bg-color: #fff;
-  --backdrop-color: rgba(0, 0, 0, 1);
   --text-font-size: 18px;
   --title-font-size: 18px;
   --button-font-size: 14px;
   --label-font-size: 14px;
   --text-stroke-color: rgba(255, 255, 255, 1);
-  --text-color: rgba(0, 0, 0, 1);
-  --label-text-color: rgba(0, 0, 0, 1);
   --margin-xs: 4px;
   --margin-s: 10px;
   --padding-s: 25px;
